@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+</head>
+<body>
+    <h1>{{username}},欢迎你！</h1>
+    <form action="/search/" method = 'post' enctype="multipart/form-data">
+    <div>
+        <label for="studentID">请输入学号：</label>
+        <input id="studentID" maxlength="50" name="stdid" type="text">
+    </div>
+    <input type="submit" value = "查询" />
+    <div>
+        <p>查询结果：</p>
+        <p>{{ studentname }}</p>
+    </div>
+</form>
+</body>
+</html>
+
