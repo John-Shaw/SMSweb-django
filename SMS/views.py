@@ -40,10 +40,10 @@ def search(request):
         user = User.objects.get(studentID=studentid)
         if user:
             studentname = user.studentName
-            return render_to_response('search.html', {'studentname': studentname})
+            return render_to_response('search.html', {'studentname': studentname,'username': studentid})
         else:
-            return render_to_response('search.html', {'studentname': 'test name'})
-            # return HttpResponseRedirect('/search')
+            # return render_to_response('search.html', {'studentname': 'test name'})
+            return HttpResponseRedirect('/search')
 
 
     return render(request, 'search.html')
